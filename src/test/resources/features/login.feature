@@ -1,6 +1,6 @@
 Feature: Login Functionality
 
-  Scenario Outline: Login to application as valid user
+  Scenario Outline: Login as valid and error user
     Given user is on login page
     When user input <username> as username
     And user input <password> as password
@@ -10,4 +10,4 @@ Feature: Login Functionality
     Examples:
       | username        | password        | status    |
       | standard_user   | secret_sauce    | success   |
-      | standard_user2  | secret_sauce2   | error    |
+      | standard_user2  | secret_sauce2   | error     |

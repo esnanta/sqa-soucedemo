@@ -43,7 +43,6 @@ public class LoginSteps {
         else{
             //assert error message
             String failMessage = driver.findElement(By.xpath("//h3[@data-test='error']")).getText();
-
             Assert.assertEquals(failMessage,"Epic sadface: Username and password do not match any user in this service");
         }
     }
