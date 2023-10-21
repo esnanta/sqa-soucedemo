@@ -1,4 +1,4 @@
-package cucumber;
+package stepdefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -9,12 +9,12 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class StepDefinition {
+public class LoginSteps {
 
     WebDriver driver;
 
     @Given("user is on login page")
-    public void user_is_on_sauce_demo_login_page(){
+    public void userIsOnLoginPage(){
         SauceDemo sauceDemo = new SauceDemo("https://www.saucedemo.com/");
         driver = sauceDemo.getWebDriver();
     }
@@ -47,5 +47,4 @@ public class StepDefinition {
             Assert.assertEquals(failMessage,"Epic sadface: Username and password do not match any user in this service");
         }
     }
-
 }
