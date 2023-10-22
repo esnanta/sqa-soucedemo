@@ -11,7 +11,7 @@ public class SauceDemo {
 
     WebDriver driver;
 
-    public SauceDemo(String _baseUrl) {
+    public SauceDemo() {
         WebDriverManager.firefoxdriver().setup(); // setup driver automatically using web driver manager
         FirefoxOptions opt = new FirefoxOptions(); //create object to set up option
         opt.setHeadless(false); //set driver to not using headless mode
@@ -19,7 +19,7 @@ public class SauceDemo {
         driver = new FirefoxDriver(opt); //apply driver setup to driver
         driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS); // time out for web driver on waiting element
         driver.manage().window().maximize();
-        driver.get(_baseUrl);
+        driver.get("https://www.saucedemo.com/");
     }
 
     public WebDriver getWebDriver(){

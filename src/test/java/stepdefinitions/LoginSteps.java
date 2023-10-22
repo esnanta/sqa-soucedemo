@@ -15,7 +15,7 @@ public class LoginSteps {
 
     @Given("user is on login page")
     public void userIsOnLoginPage(){
-        SauceDemo sauceDemo = new SauceDemo("https://www.saucedemo.com/");
+        SauceDemo sauceDemo = new SauceDemo();
         driver = sauceDemo.getWebDriver();
     }
 

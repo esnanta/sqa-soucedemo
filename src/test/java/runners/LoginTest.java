@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features/addremovecart.feature",
+        features = "src/test/resources/features/login.feature",
         glue = "stepdefinitions",
         plugin = {
                 "pretty",
@@ -16,5 +16,5 @@ import org.junit.runner.RunWith;
         }
 )
 
-public class RunCucumberTest {
+public class LoginTest {
 }

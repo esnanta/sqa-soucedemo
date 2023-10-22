@@ -12,7 +12,7 @@ public class AddRemoveCartSteps {
     WebDriver driver;
     @Given("user at homepage after authorization")
     public void userAtHomepageAfterAuthorization() {
-        SauceDemo sauceDemo = new SauceDemo("https://www.saucedemo.com/");
+        SauceDemo sauceDemo = new SauceDemo();
         driver = sauceDemo.getWebDriver();
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
